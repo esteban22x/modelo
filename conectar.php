@@ -3,11 +3,11 @@
  include ("modelo/mysql.php");
 
  //Cambiar el true por false si es un MySQL Nuevo (Por ejemplo XAMPP Recien Instalado) 
- $conexionDefecto 	= true;
+ $conexionDefectoA 	= true;
  $conexion->base 	= "hosting";
  //Conectamos con mysql
  $conexion = new mysql;
- if ($conexionDefecto){
+ if ($conexionDefectoA){
  	$conexion->servidor	= "localhost";
  	$conexion->usuario	= "root";
  	$conexion->clave 	= "password";
