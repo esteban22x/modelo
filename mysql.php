@@ -20,7 +20,7 @@ class mysql {
             $this->conexion = new mysqli($this->servidor,$this->usuario,$this->clave,$this->base) 
             or die ("Error de Conexion MySQL ".$this->conexion->connect_errno);
             $this->bandera = true;
-            mysqli_set_charset($this->conexion,"utf-8");
+            $this->conexion->set_charset("utf8");
             return $this->conexion;
     }
     
