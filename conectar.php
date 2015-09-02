@@ -4,9 +4,10 @@
 
  //Cambiar el true por false si es un MySQL Nuevo (Por ejemplo XAMPP Recien Instalado) 
  $conexionDefectoA 	= true;
- $conexion->base 	= "hosting";
+
  //Conectamos con mysql
  $conexion = new mysql;
+ $conexion->base 	= "hosting";
  if ($conexionDefectoA){
  	$conexion->servidor	= "localhost";
  	$conexion->usuario	= "root";
