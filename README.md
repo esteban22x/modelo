@@ -1,4 +1,4 @@
-# Modelo
+# Modelo PHP
 ##Modelo de Conexion MySQLi
 
 Es un modelo de conexión con MySQLi para agilizar métodos simples como: 
