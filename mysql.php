@@ -78,6 +78,15 @@ class mysql {
 	{
         mysqli_free_result($sql);
     }
+    /*
+     f_filtro: filtra caracteres indeseados que pueden ser utilizados 
+     para inyecciones SQL en las variables de consulta 
+     Uso: $conexion->f_filtro($cadena)
+    */
+    function f_filtro($cadena)
+    {
+        return $this->conexion->real_escape_string($cadena);
+    }
 }
 
 ?>
