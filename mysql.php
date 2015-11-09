@@ -87,6 +87,7 @@ class mysql {
     {
         return $this->conexion->real_escape_string($cadena);
     }
+    /* Este es el cambio * /
 }
 
 ?>
